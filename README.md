@@ -1,2 +1,1 @@
-# public_html
-school typeshi
+# This repository is intended for educational purposes only. 
