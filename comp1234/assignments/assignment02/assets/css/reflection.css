@@ -1,0 +1,106 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  background: url(../img/kt2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  position: relative; 
+  z-index: 10;
+}
+
+body {
+  background: url(../img/kt2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+#home {
+  font-family: "Parisienne", cursive;
+  font-size: 30px;
+  padding: 2rem;
+}
+
+.tagline {
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  padding: 2rem;
+}
+
+.menu-bar {
+  text-align: center;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+
+}
+
+.menu-bar ul {
+  text-align: center;
+}
+
+.menu-bar li {
+  list-style: none;
+  display: inline-block;
+}
+
+.menu-bar a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  float: left;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  border-radius: 8px;
+}
+
+.menu-bar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* main part */
+
+#reflection {
+  background: url(../img/kt8.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+
+#reflection h2{
+    font-size: 25px;
+    font-family: "Parisienne", cursive;
+    padding: 2rem;
+  }
+
+
+.reflection {
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.23);
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.reflection p{
+  font-size: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+}

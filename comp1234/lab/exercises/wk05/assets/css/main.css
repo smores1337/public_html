@@ -1,0 +1,52 @@
+/* universal selector */
+* 
+
+/* margin and padding */
+
+{
+    margin: 3px;
+    padding: 3px;
+}
+
+/*body*/
+
+body {
+    background-color: dimgrey;
+}
+
+header {
+    color: moccasin;
+    font-style: italic;
+}
+
+li {
+    font-size: 1.5em;
+}
+
+ul>li:first-child {
+    background-color: lightblue;
+}
+
+ul>li:last-child {
+    background-color: pink;
+}   
+ul>li:nth-child(2) {
+    background-color: yellow;
+}
+
+ol>li:first-child {
+    background-color: lightblue;
+}
+
+ol>li:last-child {
+    background-color: pink;
+}
+
+ol>li:nth-child(2) {
+    background-color: yellow;
+}
+
+footer {
+    border: solid black 2px;
+}
+

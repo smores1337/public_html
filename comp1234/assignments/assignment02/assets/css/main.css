@@ -1,0 +1,477 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  background: url(../img/kt2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  position: relative; 
+  z-index: 10;
+}
+
+body {
+  background: url(../img/kt2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+#home {
+  font-family: "Parisienne", cursive;
+  font-size: 30px;
+  padding: 2rem;
+}
+
+.tagline {
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  padding: 2rem;
+}
+
+.menu-bar {
+  text-align: center;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+
+}
+
+.menu-bar ul {
+  text-align: center;
+}
+
+.menu-bar li {
+  list-style: none;
+  display: inline-block;
+}
+
+.menu-bar a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  float: left;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  border-radius: 8px;
+}
+
+.menu-bar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* main part */
+
+main {
+  background:-o-linear-gradient(to top right, gray, white);
+  margin: 0px;
+  padding: 0px;
+}
+
+/* details part */
+
+#details {
+  background: url(../img/kt5.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 2rem; 
+}
+
+#details h2 {
+  font-size: 30px;
+  font-family: "Parisienne", cursive;
+}
+
+.box {
+  background: rgba(0, 0, 0, 0.9);
+  width: 20%;
+  border-radius: 8px;
+  padding:  2rem;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.23);
+  margin: 2rem; 
+  align-items: center;
+}
+
+.box:nth-child(even) {
+  float: right;
+}
+
+.box h2 {
+  font-size: 30px;
+  font-family: "Parisienne", cursive;
+  text-align: center;
+  padding: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.box p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 25px;
+}
+
+.box address {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* guests part */
+
+#guests {
+  background: url(../img/kt8.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  text-align: center;
+  position: relative;
+  padding: 2rem;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.g h3 {
+  font-size: 30px;
+  font-family: "Parisienne", cursive;
+}
+
+.g {
+  margin: 2rem;
+  padding: 2rem;
+  position: relative;
+  border: solid rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.9);
+  transition: transform .3s;
+}
+
+.g img {
+  height: auto;
+  width: 25rem;
+  border-radius: 8px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.9);
+  position: relative;
+}
+
+#guests h2{
+  font-size: 30px;
+  font-family: "Parisienne", cursive;
+  text-align: center;
+  padding: 1rem;
+}
+
+#guests figure {
+  width: 30%;
+}
+
+
+#guests figure:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+#guests figure p {
+  color: rgb(0, 0, 0);
+  padding-bottom: 2rem;
+  font-weight: 100;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+
+#guests figure p:nth-child(2) {
+  color: rgba(0, 0, 0, 0.9);
+  padding-top: 1rem;
+} 
+
+
+
+/* gallery part */
+
+#gallery {
+  background: url(../img/kt3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  text-align: center; 
+  position: relative;
+  justify-content: space-between;
+  padding: 2rem; 
+
+}
+
+#gallery h2 {
+  font-size: 30px;
+  font-family: "Parisienne", cursive;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+.gallery {
+  margin: 2rem;
+  padding: 2rem;
+  position: relative;
+  border: solid rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  display: inline-block; 
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.9);
+}
+
+.gallery img {
+  height: auto;
+  width: 25rem;
+  transition: transform .3s;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.9);
+  position: relative; 
+  z-index: 1; 
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  z-index: 2; 
+}
+
+.gallery figcaption {
+  margin-top: 1rem;
+  color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  text-decoration: none;
+  font-family: "Parisienne", cursive;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* sessions part */
+
+#schedule {
+  background: url(../img/wb.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 2rem; 
+  border-radius: 8px;
+  overflow: hidden; 
+}
+
+#schedule h2 {
+  font-size: 30px;
+  font-family: "Parisienne", cursive;
+  text-align: center;
+  padding: 1rem;
+}
+
+.session h3 {
+  font-size: 30px;
+  font-family: "Parisienne", cursive;
+  padding: 1rem;
+}
+
+.session p {
+  font-size: 30px;
+  font-family:'Times New Roman', Times, serif;
+  padding: 1rem;
+}
+
+.session {
+  width: 50%; 
+  background-color: rgba(255, 255, 255, 0.9);
+  border: solid rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.9);
+  border-radius: 8px;
+  margin: 2rem;
+  padding: 2rem;
+  float: left;
+  position: relative; 
+  transition: transform .3s;
+  opacity: .8;  
+  z-index: 1;
+}
+
+.session:nth-child(odd) {
+  float: right; 
+}
+
+.session:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translate(.5rem, 1rem);
+  cursor: pointer;
+  opacity: 1;
+  z-index: 2; 
+}
+
+/* testimonial start */
+
+#testimonials {
+  background: url(../img/wb2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.9);
+}
+
+#testimonials h2 {
+  font-size: 30px;
+  font-family: "Parisienne", cursive;
+  text-align: center;
+}
+
+.testimonial {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 75%; 
+  margin: 2rem; 
+  padding: 2rem;
+  border-left: 5px solid rgba(216, 51, 74, 0.9);
+  border-radius: 8px;
+  transition: transform .3s;
+  float: left; 
+  z-index: 1;
+  cursor: pointer;
+}
+
+.testimonial:nth-child(odd) {
+  float: left; 
+}
+
+.testimonial:nth-child(even) {
+  float: right; 
+}
+
+.author {
+  display: block;
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.testimonial p{
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+}
+
+.testimonial:nth-child(2) .author {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: rgba(216, 51, 74, 0.9);
+}
+
+.testimonial:nth-child(3) .author {
+  font-family:'Times New Roman', Times, serif;
+  color: rgba(58, 23, 124, 0.9);
+}
+
+.testimonial:nth-child(4) .author {
+  font-family:Arial, Helvetica, sans-serif;
+  color: rgba(16, 90, 68, 0.9);
+}
+
+.testimonial:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+/* footer start */
+
+#location {
+  background: url(../img/cm.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  text-align: center; 
+  position: relative;
+}
+
+#location h2 {
+  font-size: 30px;
+  font-family: "Parisienne", cursive;
+  padding: 2rem;
+}
+
+iframe {
+  width: 1000px;
+  height: 500px;
+  border-radius: 1rem;
+  border: solid rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.9);
+  transition: transform .3s;
+  opacity: .8;
+  z-index: 1;
+}
+
+iframe:hover {
+ transform: scale(1.05);
+ opacity: 1;
+}
+
+#location cite  {
+  font-size: 15px;
+  font-family: "Playfair Display", serif;
+}
+
+#location address {
+  font-size: 25px;
+  font-family: "Playfair Display", serif;
+}
+
+/* bottom menubar start */
+
+.menu-bar2 {
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+  overflow: hidden;
+  margin-top: 2rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+
+}
+
+.menu-bar2 ul {
+  text-align: center;
+}
+
+.menu-bar2 li {
+  list-style: none;
+  display: inline-block;
+}
+
+.menu-bar2 a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  float: left;
+  color:  rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  border-radius: 8px;
+}
+
+.menu-bar2 a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+

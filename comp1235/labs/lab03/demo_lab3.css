@@ -1,0 +1,17 @@
+main  {
+  display:  grid;
+  /* grid-template: 100px 100px 200px / 150px 150px; */
+  /*grid-template: 100px 100px 200px / 100px 1fr 1fr; */
+  grid-template: repeat(2, 100px) / repeat(auto-fit, minmax(50px, 1fr));
+  grid-gap: 10px 30px;
+}
+
+div { 
+  background-color: burlywood;
+}
+
+section {
+  background-color: bisque;
+  border: solid rgba(0,0,0,0.9);
+
+}

@@ -1,0 +1,16 @@
+ul>li { 
+   padding: 0.5em; 
+}
+ul>li:first-child {
+    border: solid red 2px;
+}
+ul>li:nth-child(2) {
+    border: solid red 2px;
+}
+ul>li:last-child {
+    border: solid red 2px;
+}
+ol{
+  border: solid pink 5px;
+  border-radius: 25px;
+}

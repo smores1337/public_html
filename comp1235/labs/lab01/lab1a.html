@@ -1,0 +1,55 @@
+<!-- 
+ lab1a.html the purpose HTML semantic elements, and connecting external JS and CSS files
+ -- All semantic elements are simply  underneath and have no special CSS or display
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Week 1 A</title>
+  <script src="lab1a.js"></script> <!-- External JS file-->
+
+  <!--Internal JS code - This is used when the JS and HTML need to be entangled-->
+  <script>
+    // Define a usernmae
+    let username = prompt("Please enter your username"); // Semicolons now are optional
+    document.write("Welcome" + username);
+
+  </script>
+
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a>Profile</a>
+      <a>Billing</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <article>Section 1 -Article 1 </article>
+      <article>Section 1 -Article 2</article>
+      <article>Section 1 -Article 3</article>
+    </section>
+
+    <section>
+      <article>Section 2 -Article 1</article>
+      <article>Section 2 -Article 2</article>
+      <article>Section 2 -Article 3</article>
+    </section>
+
+    <aside>
+      Aside
+    </aside>
+
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>COMP1234 - Final Assigment JavaScript</title>
+    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+</head>
+<body>
+
+    <div id="mocha"></div>
+
+    <!-- Mocha and Chai -->
+    <script src="https://cdn.rawgit.com/Automattic/expect.js/0.3.1/index.js"></script>
+    <script src="https://cdn.rawgit.com/chaijs/chai/3.5.0/chai.js"></script>
+    <script src="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.js"></script>
+
+    <script>
+        const mocha = window.mocha;
+        mocha.setup('bdd')
+    </script>
+
+    <!-- Your JavaScript file -->
+    <script src="101577027.js"></script>
+
+    <!-- <script src="sampleTest.js"></script> -->
+
+    
+   <script src="https://comp1234.gblearn.com/winter2024/as3/winter2024-testa3.js"></script> 
+
+
+    <script>
+        window.onload = function () {
+            mocha.checkLeaks();
+                mocha.run();
+        };
+    </script>
+    <script src=https://my.gblearn.com/js/loadscript.js></script>
+    <div id="finalMark">Final Mark (first part is not included): </div>
+
+</body>
+</html>

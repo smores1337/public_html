@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');  /* This fonts goes to header and footer */
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Headland+One&display=swap'); /* This font goes to the whole main page */
+
+body{
+  background-color: rgba(234,221,202,0.7);
+}
+
+/* Start of header */ 
+
+header { 
+  display: flex;   /* Flexbox Layout */
+  justify-content: center; /* To center the header */
+  width: 100%;
+  align-items: center;
+  font-family: "Headland One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav {
+  height: 100px;
+  width: 960px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.9); /* I use rgba to make it look like transparent */
+  border: 3px solid rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  padding: 0px;
+} 
+
+nav a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 8px; /* Make it a little bit round */
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.2); /* When you hover your mouse in navbar it the color change */
+}
+
+#nav-links li {
+  padding: 20px;
+  margin-right: 20px;
+}
+
+#nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#home {
+  flex: 1;
+  padding-left: 20px;
+}
+
+/* Start of Main Page */
+
+main {
+  font-family: "Funnel Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#course-grid {
+  display: grid; /* Grid Layout */
+  width: 960px;
+  grid-template-rows: 100px auto; 
+  grid-template-columns: repeat(3, 1fr); /* 3 Equal Columns */
+  gap: 15px 10px; 
+  margin: 0 auto;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+#page_title{
+  grid-column: 1 / -1;
+  color: midnightblue;
+}
+
+.course_item {
+  display: grid;
+  border: solid 2px rgba(0, 0, 0, 0.5);
+  grid-template-rows: 1fr 1fr 4fr; /* The height of the row */
+  grid-template-columns: 1fr 2fr; /* The width of the columns */
+  grid-template-areas: 
+  "image number"
+  "image title"
+  "image description"
+  ;
+}
+
+/* Here I assign each class to its designated grid-template-areas */
+
+.course_item a {
+  text-decoration: none;
+  color: midnightblue;
+}
+
+.course_image {
+  grid-area: image;
+}
+.course_number{
+  grid-area: number;
+  color: midnightblue;
+}
+
+.course_title{
+  grid-area: title;
+  color: midnightblue;
+}
+
+.course_description{
+  grid-area: description;
+  color: midnightblue;
+}
+
+
+/* Responsive design for small screens */
+
+@media (max-width: 640px) {
+  #course-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 400px) {
+  #course-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Footer Start */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Headland One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+footer ul {
+  height: 100px;
+  width: 960px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 3px solid rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  padding: 0px;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#footer-items {
+list-style: none;
+display: flex;
+justify-content: center;
+}
+
+#footer-items li {
+  padding: 30px;
+  margin-right: 20px;
+}
+
+footer a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}

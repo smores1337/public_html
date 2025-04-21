@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is a basic HTML CSS web page. We are going to learn about forms, atrributes inputs labels, placeholder, and action">
+    <meta name="keywords" content="HTML, CSS, Forms, Attributes, Input, Label, Placeholder, Datalist, Action and Patterns ">
+    <meta name="author" content="Benz Farinas">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <title>Basic HTML and CSS Web Page for the week 10 Comp1234 Lab </title>
+</head>
+<body>
+  <form>
+    <fieldset>
+        <legend>Comment Form</legend>
+
+        <div class="f">
+            <label for="fname" required>Your Name: <span>*</span> </label>
+            <input type="text" id="fname" name="fname" value="First" required>
+            <input type="text" id="lname" name="lname"  value="Last" required>
+        </div>
+
+
+        <div class="f">
+            <label for="email">Email: <span>*</span> </label>
+     
+            <input type="email" id="email" name="email" required>
+
+        </div>
+
+
+        <div class="f">
+            <label for="subject">Subject of Comments:</label>
+            <select id="subject" name="subject">
+                <option value="problem">Problem</option>
+                <option value="comment">Comment</option>
+                <option value="general-question">General Question</option>
+            </select>
+        </div>
+
+
+        <div class="f">
+            <label for="comments">Comments: <span>*</span> </label>
+ 
+            <textarea id="comments" name="comments" required></textarea>
+        </div>
+
+        <div class="f">
+            <input type="submit" value="Submit" style="background-color: purple; color: white; border: none; padding: 10px 20px; cursor: pointer;">
+        </div>
+    </fieldset>
+</form>
+<script src=https://my.gblearn.com/js/loadscript.js></script>
+</body>
+</html> 
